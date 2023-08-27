@@ -13,7 +13,7 @@ public class YandexRestAssured {
     @Test
     public void test_FilesInDisk() {
 
-        ValidatableResponse accessToken = given()
+        ValidatableResponse getAllFiles = given()
                 .header("Authorization", "OAuth " + TOKEN)
                 .when()
                 .get(RESPONSE)
